@@ -142,8 +142,39 @@ public class Main {
 
 ### 2.7 이미지 삽입
 #### 1) 인라인 이미지 링크  
+```
+// 입력 형태
 ![Alt Text](image_url)  
 
+// 예시
+![coffee](https://cdn.pixabay.com/photo/2021/09/07/10/11/coffee-beans-6603499_960_720.jpg)
+```  
+![coffee](https://cdn.pixabay.com/photo/2021/09/07/10/11/coffee-beans-6603499_960_720.jpg)
+
+
 #### 2) 참조 이미지 링크  
+```
+// 입력 형태
 ![Alt Text][image]  
+
 [image]: image_url  
+
+// 예시
+![coffee][참조이미지]  
+
+[참조이미지]: https://cdn.pixabay.com/photo/2021/09/07/10/11/coffee-beans-6603499_960_720.jpg
+```  
+![coffee][참조이미지]  
+
+[참조이미지]: https://cdn.pixabay.com/photo/2021/09/07/10/11/coffee-beans-6603499_960_720.jpg
+
+#### 3) 이미지 사이즈 조절  
+사이즈 조절 기능은 없기 때문에 `<img width="" height=""></img>`를 이용한다. (px 또는 %로 조절 가능)  
+```
+<img src="https://cdn.pixabay.com/photo/2021/09/07/10/11/coffee-beans-6603499_960_720.jpg" width="450px" height="300px"></img>  
+<img src="https://cdn.pixabay.com/photo/2021/09/07/10/11/coffee-beans-6603499_960_720.jpg" width="40%" height="30%"></img>  
+```  
+<img src="https://cdn.pixabay.com/photo/2021/09/07/10/11/coffee-beans-6603499_960_720.jpg" width="450px" height="300px"></img>  
+<img src="https://cdn.pixabay.com/photo/2021/09/07/10/11/coffee-beans-6603499_960_720.jpg" width="40%" height="30%"></img>  
+
+### 2.8 링크(Links)  
